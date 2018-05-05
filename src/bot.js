@@ -6,7 +6,7 @@ const path = require('path');
 
 const client = new CommandoClient({
   commandPrefix: config.prefix,
-  owner: process.env.BOT_OWNER,
+  owner: config.owners,
   disableEveryone: true,
   unknownCommandResponse: false
 })
